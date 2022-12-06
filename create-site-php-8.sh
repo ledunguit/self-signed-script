@@ -51,8 +51,8 @@ cat << EOF > /etc/apache2/sites-available/$site.conf
         ServerName $site
         DocumentRoot $docroot
         SSLEngine on
-        SSLCertificateFile /home/selfsigned/$site/$site.crt
-        SSLCertificateKeyFile /home/selfsigned/$site/$site.key
+        SSLCertificateFile /home/$USER/selfsigned/$site/$site.crt
+        SSLCertificateKeyFile /home/$USER/selfsigned/$site/$site.key
         <Directory $docroot>
             Options Indexes FollowSymLinks
             AllowOverride All
